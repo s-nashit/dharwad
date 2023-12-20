@@ -1,0 +1,388 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitPulse - Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+       * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .top{
+  margin-top:100px;
+  text-align:center;
+  }
+
+  .bottom{
+  margin-bottom:30px;
+  }
+
+  * Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+section {
+      max-width: cover;
+      height: 400px;
+      margin: 150px auto;
+      padding: 10px;
+      text-align: center;
+      align-items: center;
+      background-color:black; /* Blue background color */
+      color: white;
+    }
+
+.bottom{
+margin-bottom:30px;
+}
+
+.bottom1{
+margin-top:50px;
+}
+
+.checked {
+  color: orange;
+ 
+   
+  cursor: pointer; /* Add pointer cursor */
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      overflow:auto;
+      background-color: black;
+      opacity: 0.7; /* Adjust the opacity as desired */
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .logo {
+      color: #FFFFFF;
+      font-size: 40px;
+      font-family: 'Smooch', cursive;
+    }
+
+    .background-image {
+      height: 120vh;
+      width: 100%;
+      display: flex;
+      background-image: url('homepageimage3.jpeg');
+      /* added the missing background-size and background-repeat properties */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .QNA{ 
+      position: absolute; 
+    
+  padding: 19px;
+  padding-left:3%;
+  padding-right: 3%;
+  box-shadow: 0 0px 5px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 34%;
+  border-radius: 25px;
+;
+  
+      
+    }
+
+    .QNA1{
+      font-weight: bold;
+    }
+
+    .QNAstyle{
+      padding-left: 50%;
+    }
+
+    #QNAbox{
+      padding-right:1.3%;
+    }
+
+    #QNAbox2{
+      padding-right: 1.5%;
+    }
+
+    #QNAbox3{
+      padding-right: 1.4%;
+    }
+
+    #QNAbox4{
+      padding-right:1.4%;
+    }
+
+    #QNAbox5{
+      padding-right:1.4%;
+    }
+
+    .arrow {
+      margin-left: 186px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.arrow {
+      margin-left: 186px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.arrow2 {
+      margin-left: 16.2px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.arrow3 {
+      margin-left: 109px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.arrow4 {
+      margin-left: 105px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.arrow5 {
+      margin-left: 38px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.material-icons{
+  font-size: 35px !important;
+  margin-right: 15px;
+  color: red ;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+  <section style="background-image: linear-gradient(358.4deg, rgba(249, 151, 119, 1) -2.1%, rgba(98, 58, 162, 1) 90%);">
+    <div style="font-family: 'Smooch', cursive; display: flex; align-items: center; justify-content: space-between;">
+      <div class="logo">FitPulse</div>
+      <i class="material-icons"> <a href="new.html">&#xe853;</a></i>
+    </div>
+  </section>
+
+  <section height="50vh" width="50%" style="background-image: linear-gradient(135deg, #8a246f 10%, #9795d1 100%);">
+    <nav>
+      <div class="navbar">
+        <a href="#aim">Our Aim</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contactus">Contact us</a>
+        <a href="#membership">Membership</a>
+        <a href="#getstarted">Get Started</a>
+      </div>
+    </nav>
+  </section>
+
+  <section>
+    <div class="top">
+      <div class="bottom">
+        <span class="fa fa-star checked" onclick="rateStar(1)"></span>
+        <span class="fa fa-star checked" onclick="rateStar(2)"></span>
+        <span class="fa fa-star checked" onclick="rateStar(3)"></span>
+        <span class="fa fa-star checked" onclick="rateStar(4)"></span>
+        <span class="fa fa-star checked" onclick="rateStar(5)"></span>
+      </div>
+      <h1>3.7 Million 5-Star Reviews</h1>
+    </div>
+
+    <div class="slideshow-container">
+      <div id="autoCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h5>“Good for tracking calories and macros with a huge database of food.”<br><br>Iain M.</h5>
+                  </div>
+                  <div class="carousel-item">
+                    <h5>“Friendly, easy-to-use app that keeps me accountable.”<br><br>Dinah L.</h5>
+                  </div>
+                <div class="carousel-item">
+                    <h5>“Can’t lose weight and stay on track without it.”<br><br>Jennie S.</h5>
+                </div>
+                <div class="carousel-item">
+                    <h5>“Love this app. It keeps me on track with my nutritional goals.”<br><br>Annette B.</h5>
+                  </div>
+                <div class="carousel-item">
+                    <h5>“Not only are the tools super helpful, the customer service is insanely awesome!”<br><br>Laura K.</h5>
+                  </div>
+                <div class="carousel-item">
+                    <h5>“Helped me get moving on my goals and tracking my weight loss and bodybuilding.”<br><br>Jason L.</h5>
+                  </div>
+              </div>
+
+              <div class="bottom1">
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>  
+                </div>
+              </div>
+              
+            </section> 
+
+            <section class="background-image"></section>
+            <section>
+                <br>
+                <div class="QNAstyle">
+                  <span class="QNA1">Q&A</span>
+                </div>
+                <br><br>
+            
+                <div>
+                  <span class="QNA" id="QNAbox5" >Is FitPulse a free calorie tracker app?<i class="arrow"></i></span>
+                </div>
+                <br><br><br><br><br>
+            
+                <div>
+                  <span class="QNA" id="QNAbox">How to track calories with a calorie counter app like FitPulse?<i class="arrow2" ></i></span>
+                </div>
+                <br><br><br><br><br>
+            
+                <div>
+                  <span class="QNA" id="QNAbox2">What nutrition data can I track besides calories?<i class="arrow3"></i></span>
+                </div>
+                <br><br><br><br><br>
+            
+                <div>
+                  <span class="QNA" id="QNAbox3">Does FitPulse use a BMI calculator to set goals?<i class="arrow4"></i></span>
+                </div>
+                <br><br><br><br><br>
+            
+                <div>
+                  <span class="QNA" id="QNAbox4">Can I track weight, workouts, water, or intermittent fasting?<i class="arrow5"></i></span>
+                </div>
+                <br><br><br><br><br>
+              </section>
+            
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            
+            </body>
+            </html>

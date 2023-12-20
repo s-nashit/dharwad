@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url('BG img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 1535px 1000px;
+            position: absolute;
+            margin: 0;
+            background-image: url('neutral-abstract-background-minimal-poster-template-with-wave-shapes-calm-design-with-gradient-elements-white-website-wallpaper-modern-soft-texture_583398-400.jpeg');
+        }
+        
+        .social {
+            margin-top: 300px;
+            display: flex;
+            color: rgb(255, 255, 255);
+        }
+
+        .social a {
+            background: black;
+            width: 108px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            margin-left: 35px;
+            margin-top: 100px;
+            font-size: large;
+            font-synthesis-weight: 700;
+        }
+
+        .social button {
+            background: black;
+            width: 138px;
+            border-radius: 3px;
+            padding: 5px 10px 1px 5px;
+            background-color: rgb(255, 255, 255);
+            color: blue;
+            text-align: center;
+            margin-left: 27px;
+            margin-top: 100px;
+            font-size: large;
+            font-synthesis-weight: 700;
+            height: 51px;
+            border: 2px solid blue;
+        }
+
+        .social a:hover {
+            background-color: rgb(0, 102, 255);
+        }
+
+        .social button:hover {
+            background-color: rgb(213, 213, 255);
+        }
+
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
+        }
+
+        .containerstyle {
+            box-shadow: 2px;
+            width: 350px;
+            height: 550px;
+            align-items: center;
+            border-radius: 10px;
+            backdrop-filter: blur(0px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+            margin-left: 567px;
+            margin-top: 60px;
+        }
+
+        .logo {
+            width: 1519px;
+            font-size: 40px;
+            float: left;
+            margin: 0px;
+            color: white;
+
+
+        }
+
+        .social a {
+            margin-right: 3px;
+            height: 20px;
+            padding: 15px;
+        }
+
+        .social a:last-child {
+            margin-right: 0px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+
+        #da {
+            margin-left: 0px;
+            margin-top: -20px;
+            font-weight: bolder;
+            font-size: larger;
+            font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+        }
+
+        #db {
+            margin-left: 6px;
+            margin-top: 20px;
+            font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+            font-size: 14px;
+        }
+
+
+
+        .content2{
+            margin-left: 25px;
+            margin-top: 20px;
+            font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+            line-height: 60px; 
+            width: 300px;
+            height: 54px;
+            cursor: pointer;
+            overflow-x: visible;
+        }
+
+        .content2 button:hover {
+            background-color: rgb(203, 203, 208);
+            border-color:  rgb(188, 188, 192);
+        }
+
+        .clicked {
+            background-color: rgb(203, 203, 208);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #cd5ee5 43%, #FF5ACD 72%);
+        }
+
+        #ba, #bb, #bc, #bd, #be, #bf, #bg, #bh, #bi, #bj, #bk, #bl, #bm{
+            border: 2px solid rgb(188, 188, 192);
+            border-radius: 3px;
+            font-size: 0.875rem;
+            width: 300px;
+            height: 54px;
+        }
+
+        .loading::after {
+            content: "Loading...";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="bodystyle">
+    <header style="background-image: linear-gradient(358.4deg, rgba(249, 151, 119, 1) -2.1%, rgba(98, 58, 162, 1) 90%);" class="style">
+        <div style="font-family: 'Smooch', cursive; display: flex; justify-content: space-between;">
+            <div class="logo">FitPulse</div>
+        </div>
+    </header>
+    <div class="containerstyle">
+        <div class="fieldset">
+            <div class="content">
+                <div id="da">In terms of diet modification, what do you want to focus on?</div>
+                <div id="db">Select all that apply.</div>
+            </div>
+            <div class="no-hover">
+                <div class="content2">
+                    <button class="myButton" id="ba">Track macros</button><br>
+                    <button class="myButton" id="bb">Eat vegan</button><br>
+                    <button class="myButton" id="bc">Eat vegetarian</button><br>
+                    <button class="myButton" id="bd">Eat pescatarian</button><br>
+                    <button class="myButton" id="be">Less sugar</button><br>
+                    <button class="myButton" id="bf">Less protein</button><br>
+                    <button class="myButton" id="bg">Less dairy</button>
+                    <button class="myButton" id="bh">Fewer carbs</button><br>
+                    <button class="myButton" id="bi">Less fat</button><br>
+                    <button class="myButton" id="bj">More protein</button><br>
+                    <button class="myButton" id="bk">More fat</button>
+                    <button class="myButton" id="bl">More fruits and vegetables</button><br>
+                    <button class="myButton" id="bm">Other</button>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <button class="go"><i class="fab fa-google"></i> BACK</button>
+            <a id="nextButton" class="fb"><i class="fab fa-facebook"></i> NEXT</a>
+        </div>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".myButton");
+        const nextButton = document.getElementById("nextButton");
+        const maxSelections = 3;
+        let selectedCount = 0;
+      
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                if (this.classList.contains("clicked")) {
+                    this.classList.remove("clicked");
+                    selectedCount--;
+                } else {
+                    if (selectedCount < maxSelections) {
+                        this.classList.add("clicked");
+                        selectedCount++;
+
+                        if (selectedCount === maxSelections) {
+                            nextButton.innerText = "Loading...";
+                            this.disabled = true;
+
+                            setTimeout(() => {
+                                window.location.href = 'your-next-page-url.html';
+                            }, 1000);
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+        </body>
+        </html>
+    

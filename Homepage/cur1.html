@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Carousel Example</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+  body {
+    font-family: Verdana, sans-serif; 
+    margin-top:-50px;
+  }
+  
+  
+
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    
+  }
+
+  .top{
+  margin-top:100px;
+  text-align:center;
+  }
+
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+
+section {
+  width: auto;
+      height: 400px;
+      margin: 150px auto;
+      padding: 3px;
+      text-align: center;
+      align-items: center;
+      background-color:black;
+      color: white;
+      margin-top: -60px;
+    }
+
+.bottom{
+margin-bottom:30px;
+}
+
+.bottom1{
+margin-top:50px;
+}
+
+.checked {
+  color: orange;
+ 
+   
+  cursor: pointer;
+}
+
+.carousel {
+  margin-top: 2px;
+}
+
+
+  </style>
+</head>
+<body>
+  <section>
+  <div class="top">
+  <div class="bottom">
+      
+      <span class="fa fa-star checked" onclick="rateStar(1)"></span>
+      <span class="fa fa-star checked" onclick="rateStar(2)"></span>
+      <span class="fa fa-star checked" onclick="rateStar(3)"></span>
+      <span class="fa fa-star checked" onclick="rateStar(4)"></span>
+      <span class="fa fa-star checked" onclick="rateStar(5)"></span>
+    </div>
+      
+        <h1>3.7 Million 5-Star Reviews</h1>
+      </div>
+  </div>
+
+  <div class="slideshow-container">
+    <div id="autoCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel">
+        <div class="carousel-item active">
+          <h5>“Good for tracking calories and macros with a huge database of food.”<br><br>Iain M.</h5>
+        </div>
+        <div class="carousel-item">
+          <h5>“Friendly, easy-to-use app that keeps me accountable.”<br><br>Dinah L.</h5>
+        </div>
+      <div class="carousel-item">
+          <h5>“Can’t lose weight and stay on track without it.”<br><br>Jennie S.</h5>
+      </div>
+      <div class="carousel-item">
+          <h5>“Love this app. It keeps me on track with my nutritional goals.”<br><br>Annette B.</h5>
+        </div>
+      <div class="carousel-item">
+          <h5>“Not only are the tools super helpful, the customer service is insanely awesome!”<br><br>Laura K.</h5>
+        </div>
+      <div class="carousel-item">
+          <h5>“Helped me get moving on my goals and tracking my weight loss and bodybuilding.”<br><br>Jason L.</h5>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+      <div class="bottom1">
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>  
+      </div>
+    </div>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+  </section> 
+
+</body>
+</html>
